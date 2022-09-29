@@ -1,0 +1,7 @@
+function Hill-climbing-sw (problem) returns um estado que é um máximo local
+    current = make_node(problem.initial_state)
+    loop
+        neighbor = um sucessor de current que tenha o maior valor de pontuação
+        if neighbor.value < current.value
+            return current.state
+        current = neighbor
